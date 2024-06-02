@@ -1,0 +1,129 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="br.com.gestao.fioriappadmin358.controller.Validacao"
+    displayBlock="true"
+>
+    <App id="_IDGenApp1">
+        <pages>
+            <Page
+                xmlns="sap.m"
+                id="pageId"
+                title="Page Title"
+                floatingFooter="true"
+            >
+                <headerContent>
+                    <Button
+                        icon="sap-icon://action"
+                        tooltip="Share"
+                        id="button0"
+                    />
+                </headerContent>
+                <content>
+                    <sap.ui.layout.form:SimpleForm
+                        xmlns:sap.ui.layout.form="sap.ui.layout.form"
+                        editable="true"
+                        layout="ResponsiveGridLayout"
+                        maxContainerCols="2"
+                        id="form0"
+                        labelSpanL="4"
+                        labelSpanM="4"
+                        emptySpanL="1"
+                        emptySpanM="1"
+                        columnsL="2"
+                        columnsM="2"
+                    >
+                        <!--Validação Texto-->
+                        <sap.ui.layout.form:content>
+                            <Label
+                                text="Validacao Texto"
+                                width="100%"
+                                id="label0"
+                            />
+                            <Input
+                                xmlns="sap.m"
+                                valueStateText="Insira pelo menos 3 caracteres"
+                                maxLength="50"
+                                value="{path : 'MDL_Produto>/Name', type : 'sap.ui.model.type.String', constraints: { search: '^[A-Za-z]+$', minLength: 3 } }"
+                                id="input0"
+                            />
+
+                            <!--Validação Numerica-->
+                            <Label
+                                id="_IDGenLabel1"
+                                text="Validacao Numerica"
+                                width="100%"
+                            />
+                            <Input
+                                xmlns="sap.m"
+                                id="_IDGenInput1"
+                                type="Number"
+                                valueStateText="Insira pelo menos 3 caracteres"
+                                value="{path : 'MDL_Produto>/Numero', type : 'sap.ui.model.type.String', constraints: { search: '^[0-9]*$', minLength: 3, maxLength: 10  } }"
+                            />
+
+                            <!--Validação Data-->
+                            <Label
+                                id="_IDGenLabel2"
+                                text="Validacao Data"
+                                width="100%"
+                            />
+                            <DatePicker
+                                xmlns="sap.m"
+                                id="picker0"
+                                value="{ path: 'MDL_Produto>/Createdat', type : 'sap.ui.model.type.Date', formatOptions : { source: { pattern: 'dd/MM/yyyy' }, pattern: 'dd/MM/yyyy' },  constraints : {minimum : '01/01/2022' } }"
+                            />
+
+                            <!--Validação Moeda-->
+                            <Label
+                                id="_IDGenLabel3"
+                                text="Validacao moeda"
+                                width="100%"
+                            />
+                            <Input
+                                id="_IDGenInput2"
+                                xmlns="sap.m"
+                                valueStateText="Insira um valor"
+                                value="{path : 'MDL_Produto>/Price', type : 'sap.ui.model.type.Currency', constraints: { minimum: 5, maximum: 10000  } }"
+                            />
+
+                            <Label
+                                id="_IDGenLabel4"
+                                text="Validacao moeda 5 casas decimais"
+                                width="100%"
+                            />
+                            <Text
+                                id="_IDGenText1"
+                                text="{path : 'MDL_Produto>/Price', type : 'sap.ui.model.type.Currency', formatOptions : { minFractionDigits: 5 } }"
+                            />
+
+                            <!--Validação Float-->
+                            <Label
+                                id="_IDGenLabel5"
+                                text="Validacao Float"
+                                width="100%"
+                            />
+                            <Input
+                                id="_IDGenInput5"
+                                xmlns="sap.m"
+                                valueStateText="Insira um valor"
+                                value="{ path : 'MDL_Produto>/Largura', type : 'sap.ui.model.type.Float', formatOptions : {  maxFractionDigits: 2,  minFractionDigits: 2, groupingSeparator: '.',  decimalSeparator: ',' }, constraints : {  minLength : 1,  minimum : 5,  maximum : 100  }  }"
+                            />
+                        </sap.ui.layout.form:content>
+                    </sap.ui.layout.form:SimpleForm>
+                </content>
+                <footer>
+                    <OverflowToolbar id="toolbar1">
+                        <ToolbarSpacer id="_IDGenToolbarSpacer1" />
+                        <Button
+                            id="_IDGenButton1"
+                            type="Accept"
+                            text="Accept"
+                            press="verModel"
+                        />
+                    </OverflowToolbar>
+                </footer>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

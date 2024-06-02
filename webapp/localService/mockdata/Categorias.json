@@ -1,0 +1,27 @@
+[
+    {
+      "Category": "CNTB",
+      "Description": "Notebook",
+      "__metadata": {
+        "uri": "/Categorias('CNTB')",
+        "type": "cds_zsd_producao_358.CategoriasType"
+      }
+    },
+    {
+      "Category": "CPDA",
+      "Description": "Digital Organizer",
+      "__metadata": {
+        "uri": "/Categorias('CPDA')",
+        "type": "cds_zsd_producao_358.CategoriasType"
+      }
+    },
+    {
+      "Category": "CSCR",
+      "Description": "Screens",
+      "__metadata": {
+        "uri": "/Categorias('CSCR')",
+        "type": "cds_zsd_producao_358.CategoriasType"
+      }
+    }
+  ]
+  
