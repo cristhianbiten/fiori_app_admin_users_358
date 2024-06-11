@@ -2,7 +2,7 @@
 
 specVersion: "3.1"
 metadata:
-  name: br.com.gestao.fioriappadmin358
+  name: br.com.gestao.fioriappusers358
 type: application
 framework:
   name: SAPUI5
@@ -39,7 +39,7 @@ server:
       configuration:
         mountPath: /
         services:
-          - urlPath: /sap/opu/odata/sap/ZSB_PRODUCAO_358
+          - urlPath: /sap/opu/odata/sap/ZUSERS_358_SRV
             metadataPath: ./webapp/localService/metadata.xml
             mockdataPath: ./webapp/localService/data
             generateMockData: true
@@ -47,5 +47,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: br.com.gestao.fioriappadmin358
+        component: br.com.gestao.fioriappusers358
         ui5Theme: sap_horizon

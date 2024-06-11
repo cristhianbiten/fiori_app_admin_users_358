@@ -1,6 +1,6 @@
 specVersion: "3.1"
 metadata:
-  name: br.com.gestao.fioriappadmin358
+  name: br.com.gestao.fioriappusers358
 type: application
 server:
   customMiddleware:
@@ -29,17 +29,17 @@ server:
       configuration:
         mountPath: /
         services:
-          - urlPath: /sap/opu/odata/sap/ZSB_PRODUCAO_358
+          - urlPath: /sap/opu/odata/sap/ZUSERS_358_SRV
             metadataPath: ./webapp/localService/metadata.xml
             mockdataPath: ./webapp/localService/data
             generateMockData: true
         annotations: []
         service:
-          - urlPath: /sap/opu/odata/sap/ZSB_PRODUCAO_358
+          - urlPath: /sap/opu/odata/sap/ZUSERS_358_SRV
             generateMockData: true
             metadataXmlPath: ./webapp/localService/metadata.xml
             mockdataRootPath: ./webapp/localService/data
-          - urlPath: /sap/opu/odata/sap/ZSB_PRODUCAO_358/
+          - urlPath: /sap/opu/odata/sap/ZUSERS_358_SRV/
             metadataXmlPath: ./webapp/localService/metadata.xml
             mockdataRootPath: ./webapp/localService/mockdata
             generateMockData: true

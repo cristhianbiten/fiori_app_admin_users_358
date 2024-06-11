@@ -11,7 +11,7 @@
         <sap.ui.layout.form:SimpleForm
             xmlns:sap.ui.layout.form="sap.ui.layout.form"
             xmlns:sap.ui.core="sap.ui.core"
-            id="form4"
+            id="form0"
             class="sapUxAPObjectPageSubSectionAlignContent"
             editable="false"
             layout="ColumnLayout"
@@ -30,22 +30,36 @@
             singleContainerFullSize="false"
         >
             <sap.ui.layout.form:content>
+                <!-- Propriedade Nome Usuario -->
                 <m:Label
                     id="_IDGenLabel9"
-                    text="{i18n>sfCategory}"
+                    text="{i18n>sfNome}"
                 />
                 <m:Text
                     id="_IDGenText5"
-                    text="{to_Cat/Description}"
+                    text="{Firstname} {Lastname}"
                     class="sapMObjectNumberMedium"
                 />
+
+                <!-- Propriedade Email -->
                 <m:Label
                     id="_IDGenLabel10"
-                    text="{i18n>sfSupplier}"
+                    text="{i18n>sfEmail}"
                 />
                 <m:Text
                     id="_IDGenText6"
-                    text="{Supplierid} {Suppliername}"
+                    text="{Email}"
+                    class="sapMObjectNumberMedium"
+                />
+
+                <!-- Propriedade Fone -->
+                <m:Label
+                    id="_IDGenLabel11"
+                    text="{i18n>sfFone}"
+                />
+                <m:Text
+                    id="_IDGenText7"
+                    text="{Fone}"
                     class="sapMObjectNumberMedium"
                 />
             </sap.ui.layout.form:content>

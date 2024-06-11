@@ -14,7 +14,7 @@ sap.ui.define([
 			// start the app UI component
 			this.iStartMyUIComponent({
 				componentConfig: {
-					name: "br.com.gestao.fioriappadmin358",
+					name: "br.com.gestao.fioriappusers358",
 					async: true
 				},
 				hash: oOptions.hash,

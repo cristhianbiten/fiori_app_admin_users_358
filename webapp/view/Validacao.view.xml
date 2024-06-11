@@ -1,7 +1,7 @@
 <mvc:View
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
-    controllerName="br.com.gestao.fioriappadmin358.controller.Validacao"
+    controllerName="br.com.gestao.fioriappusers358.controller.Validacao"
     displayBlock="true"
 >
     <App id="_IDGenApp1">

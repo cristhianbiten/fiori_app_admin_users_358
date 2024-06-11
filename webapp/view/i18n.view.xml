@@ -1,4 +1,4 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="br.com.gestao.fioriappadmin358.controller.i18n" displayBlock="true">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="br.com.gestao.fioriappusers358.controller.i18n" displayBlock="true">
     <Shell id="shell">
         <App id="app">
             <pages>

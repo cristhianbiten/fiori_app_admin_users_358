@@ -8,7 +8,7 @@ sap.ui.define(
   function (Controller, ValueState, JSONModel) {
     "use strict";
 
-    return Controller.extend("br.com.gestao.fioriappadmin358.controller.Validacao", {
+    return Controller.extend("br.com.gestao.fioriappusers358.controller.Validacao", {
       onInit: function () {
 
         sap.ui.getCore().attachValidationError(function (oEvent) {

@@ -12,7 +12,7 @@ sap.ui.define([
     function (Controller, Label, Input, TextArea, SimpleForm, JSONModel) {
         "use strict";
 
-        return Controller.extend("br.com.gestao.fioriappadmin358.controller.DataBiding", {
+        return Controller.extend("br.com.gestao.fioriappusers358.controller.DataBiding", {
             onInit: function () {
 
                 var objtModelJSON = new JSONModel();
